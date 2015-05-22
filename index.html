@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matt's Sports Analysis Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="topbar">
+            <ul id="topmenu">
+                <li><a href="#">Top Menu Item 1</a></li>
+                <li><a href="#">Top Menu Item 2</a></li>
+                <li><a href="#">Top Menu Item 3</a></li>
+                <li><a href="#">Top Menu Item 4</a></li>
+                <li><a href="#">Top Menu Item 5</a></li>
+            </ul>
+        </div>
+        
+        <div id="sidebar">
+            <h1>Home</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Side Menu Item 1</a></li>
+                    <li><a href="#">Side Menu Item 2</a></li>
+                    <li><a href="#">Side Menu Item 3</a></li>
+                    <li><a href="#">Side Menu Item 4</a></li>
+                    <li><a href="#">Side Menu Item 5</a></li>
+                </ul>
+        </div>
+        
+        <div id="main">
+            <div id="versus"></div>
+            <canvas id="chart"></canvas>
+        </div>
+        <p id="test">Bah</p>
+        <div class="Teams">
+            <button type="button" onclick="updateChartData()">Go</button>
+            <select name = "team1" id="dropdown1" onchange="updateChartData()"></select>
+            <select name = "team2" id="dropdown2" onchange="updateChartData()"></select>
+        </div>
+
+
+</body>
+
+</html>

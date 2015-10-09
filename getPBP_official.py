@@ -2,6 +2,7 @@ import requests
 import json
 import os, fnmatch
 import pandas as pd
+from collections import defaultdict
 
 refresh = input('Do you want to refresh the data? (Y/N)')
 if refresh == 'Y':
@@ -153,6 +154,16 @@ off_pct = off_pct[['deep left', 'deep middle', 'deep right', 'short left', 'shor
 
 def_pct = pd.read_json('C:/Users/mmcvicar/Documents/FFBWS/FFBWS/Defense_Pass_PCT.txt',orient='index')
 def_pct = def_pct[['deep left', 'deep middle', 'deep right', 'short left', 'short middle', 'short right']]
+
+results = defaultdict(lambda: defaultdict(dict))
+for index, value in test.itertuples():
+    for i, key in enumerate(index):
+        if i == 0:
+            nested = results[key]
+        elif i == len(index) - 1:
+            nested[key] = value
+        else:
+            nested = nested[key]
 
 top_targets = df_full[['offense_team', 'pass_type', 'target_name']]
 top_targets.groupby(['offense_team', 'pass_type']).agg(lambda x:x.value_counts().index[0])

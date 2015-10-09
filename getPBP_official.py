@@ -108,7 +108,7 @@ df_main = pd.DataFrame(columns = ['offense_team', 'defense_team', 'play_type', '
 df_full = pd.DataFrame(columns = ['offense_team', 'defense_team', 'play_type', 'pass_type', 'target_name', 'cmpt_flag'])
 
 game = 0
-rootdir = '/Users/mmcvicar/Documents/FFBAWS/pbp_data/'
+rootdir = 'C:/Users/mmcvicar/Documents/FFBWS/FFBWS/pbp_official/'
 for subdir, dirs, files in os.walk(rootdir):
     for file in fnmatch.filter(files, '*.txt'):
         offense_team = []
@@ -141,12 +141,18 @@ for team in teams:
         part[pass_type] = df_full[(df_full['defense_team'] == team) & (df_full['pass_type'] == pass_type) & (df_full['cmpt_flag'] == "C")].count()['play_type'] / df_full[(df_full['defense_team'] == team) & (df_full['pass_type'] == pass_type)].count()['play_type']
     defense_pass_PCT[team] = part
 
-with open('/users/mmcvicar/Documents/FFBAWS/Offense_Pass_PCT.txt', 'w') as output:
+with open('C:/users/mmcvicar/Documents/FFBWS/FFBWS/Offense_Pass_PCT.txt', 'w') as output:
     json.dump(offense_pass_PCT, output)
 
-with open('/users/mmcvicar/Documents/FFBAWS/Defense_Pass_PCT.txt', 'w') as output:
+with open('C:/users/mmcvicar/Documents/FFBWS/FFBWS/Defense_Pass_PCT.txt', 'w') as output:
     json.dump(defense_pass_PCT, output)
 
+
+off_pct = pd.read_json('C:/Users/mmcvicar/Documents/FFBWS/FFBWS/Offense_Pass_PCT.txt',orient='index')
+off_pct = off_pct[['deep left', 'deep middle', 'deep right', 'short left', 'short middle', 'short right']]
+
+def_pct = pd.read_json('C:/Users/mmcvicar/Documents/FFBWS/FFBWS/Defense_Pass_PCT.txt',orient='index')
+def_pct = def_pct[['deep left', 'deep middle', 'deep right', 'short left', 'short middle', 'short right']]
 
 top_targets = df_full[['offense_team', 'pass_type', 'target_name']]
 top_targets.groupby(['offense_team', 'pass_type']).agg(lambda x:x.value_counts().index[0])

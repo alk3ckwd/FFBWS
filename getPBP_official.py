@@ -165,5 +165,8 @@ for index, value in test.itertuples():
         else:
             nested = nested[key]
 
+with open('C:/users/mmcvicar/Documents/FFBWS/FFBWS/Top_Targets.txt', 'w') as output:
+    json.dump(results, output)
+
 top_targets = df_full[['offense_team', 'pass_type', 'target_name']]
 top_targets.groupby(['offense_team', 'pass_type']).agg(lambda x:x.value_counts().index[0])

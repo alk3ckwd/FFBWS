@@ -1,0 +1,38 @@
+import json
+import csv
+import pandas as pd
+
+f = open('/Users/mmcvicar/Documents/FFBAWS/nfl_sched.txt').read()
+sched = json.loads(f)
+
+hometeam = []
+awayteam = []
+humidity = []
+temp = []
+condition = []
+wind_speed = []
+wind_dir = []
+venue_type = []
+venue_surface=[]
+
+
+for weeks in sched['weeks']:
+	for game in weeks['games']:
+		hometeam.append(game['home'])
+		awayteam.append(game['away'])
+		for stat in game['weather']:
+			humidity.append(stat['humidity'])
+			temp.append(stat['temperature'])
+			condition.append(stat['condition'])
+			for wind in stat['wind']:
+				wind_speed.append(wind['speed'])
+				wind_dir.append(wind['direction'])
+		for ven in game['venue']:
+			venue_type.append(ven['type'])
+			venue_surface.append(ven['venue_surface'])
+
+shed_df = pd.concate([pd.DataFrame(hometeam, columns = ['home_team']), pd.DataFrame(awayteam, columns = ['away_team']),
+					  pd.DataFrame(humidity, columns = ['humidity']), pd.DataFrame(temp, columns = ['temp']), pd.DataFrame(condition, columns = ['condition']),
+					  pd.DataFrame(wind_speed, columns = ['wind_speed']), pd.DataFrame(wind_dir, columns = ['wind_dir']),
+					  pd.DataFrame(venue_type, columns = ['venue_type']), pd.DataFrame(venue_surface, columns = ['venue_surface'])], axis = 2)
+

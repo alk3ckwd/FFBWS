@@ -1,0 +1,256 @@
+0,1,50,73,Sunny,11,WNW,outdoor,artificial,11,26
+1,1,62,84,Overcast ,4,N,dome,artificial,19,1
+2,1,59,90,Partly Cloudy ,16,SE,outdoor,turf,18,16
+3,1,50,75,Partly Cloudy ,8,N,outdoor,turf,14,23
+4,1,47,77,Sunny,8,NE,outdoor,artificial,22,21
+5,1,41,75,Partly Cloudy ,4,ENE,outdoor,turf,3,5
+6,1,53,72,Sunny,9,ESE,outdoor,turf,30,15
+7,1,53,68,Sunny,9,E,outdoor,turf,7,24
+8,1,,,,,,retractable_dome,turf,31,12
+9,1,48,75,Partly Cloudy ,8,N,outdoor,artificial,6,2
+10,1,57,71,Sunny,8,E,dome,artificial,17,28
+11,1,49,88,Partly Cloudy ,4,W,outdoor,turf,4,29
+12,1,57,84,Partly Cloudy ,7,N,retractable_dome,artificial,27,8
+13,1,24,77,Partly Cloudy ,11,SSW,outdoor,turf,13,9
+14,1,50,73,Sunny,8,SE,dome,artificial,20,10
+15,1,29,100,Partly Cloudy ,7,SW,retractable_dome,turf,25,0
+16,2,79,81,Overcast ,0,N,outdoor,artificial,24,2
+17,2,60,70,Partly Cloudy ,4,NNW,outdoor,turf,8,30
+18,2,60,68,Overcast ,8,NE,outdoor,turf,10,4
+19,2,55,59,Partly Cloudy ,0,NE,outdoor,artificial,16,3
+20,2,,,,,,outdoor,artificial,18,17
+21,2,59,59,Overcast ,0,N,outdoor,turf,19,7
+22,2,52,64,Partly Cloudy ,0,ESE,outdoor,artificial,1,6
+23,2,52,64,Sunny,4,N,outdoor,turf,14,31
+24,2,49,64,Sunny,0,N,outdoor,artificial,0,20
+25,2,55,82,Partly Cloudy ,13,NW,outdoor,turf,26,25
+26,2,,,,,,outdoor,turf,28,29
+27,2,64,70,Partly Cloudy ,11,W,outdoor,turf,12,22
+28,2,52,63,Sunny,17,S,outdoor,turf,21,11
+29,2,17,80,Partly Cloudy ,0,W,outdoor,turf,15,9
+30,2,48,79,Partly Cloudy ,11,W,outdoor,turf,5,27
+31,2,88,57,Light rain,4,W,retractable_dome,artificial,23,13
+32,3,51,81,Clear ,0,N,dome,artificial,29,1
+33,3,64,66,Partly Cloudy ,14,W,dome,artificial,11,10
+34,3,61,77,Partly Cloudy ,15,W,outdoor,artificial,30,6
+35,3,,,,,,dome,artificial,8,28
+36,3,78,72,Overcast ,4,E,outdoor,turf,31,23
+37,3,65,79,Partly Cloudy ,11,SSE,outdoor,artificial,22,18
+38,3,83,72,Mist,4,N,outdoor,artificial,12,20
+39,3,69,73,Partly Cloudy ,27,SW,outdoor,artificial,25,3
+40,3,,,,,,outdoor,turf,13,14
+41,3,63,85,Partly Cloudy ,11,ENE,dome,artificial,17,19
+42,3,73,70,Partly Cloudy ,24,W,outdoor,turf,2,7
+43,3,22,95,Partly Cloudy ,0,N,retractable_dome,turf,27,0
+44,3,,,,,,outdoor,turf,15,16
+45,3,47,77,Sunny,7,SE,outdoor,artificial,9,26
+46,3,54,81,Partly Cloudy ,4,SW,outdoor,turf,24,4
+47,3,42,63,Clear ,14,NW,outdoor,artificial,5,21
+48,4,88,64,Overcast ,4,N,outdoor,turf,20,31
+49,4,70,82,Partly Cloudy ,6,NE,retractable_dome,turf,3,12
+50,4,50,72,Sunny,7,WSW,outdoor,turf,29,24
+51,4,,,,,,outdoor,artificial,10,21
+52,4,42,79,Partly Cloudy ,4,NE,retractable_dome,artificial,30,13
+53,4,48,79,Partly Cloudy ,0,N,outdoor,artificial,4,2
+54,4,54,75,Partly Cloudy ,0,N,outdoor,turf,11,5
+55,4,64,70,Partly Cloudy ,9,E,retractable_dome,artificial,16,22
+56,4,61,72,Partly Cloudy ,12,S,outdoor,turf,14,25
+57,4,38,83,Sunny,9,S,outdoor,artificial,1,17
+58,4,60,68,Partly Cloudy ,0,S,outdoor,turf,23,27
+59,4,37,86,Partly Cloudy ,0,N,retractable_dome,artificial,19,8
+60,4,45,82,Partly Cloudy ,6,NE,outdoor,turf,18,15
+61,5,94,63,Mist,8,ESE,outdoor,turf,17,11
+62,5,,,,,,outdoor,artificial,1,20
+63,5,50,54,Partly Cloudy ,14,S,retractable_dome,artificial,2,13
+64,5,,,,,,retractable_dome,artificial,12,8
+65,5,44,57,Partly Cloudy ,13,WSW,outdoor,turf,28,23
+66,5,36,63,Partly Cloudy ,12,SSW,outdoor,turf,7,30
+67,5,38,73,Partly Cloudy ,9,E,dome,artificial,29,19
+68,5,50,54,Overcast ,17,SW,dome,artificial,3,10
+69,5,36,61,Sunny,0,SW,outdoor,turf,5,4
+70,5,27,71,Sunny,11,N,outdoor,turf,24,14
+71,5,26,68,Partly Cloudy ,6,NNW,outdoor,turf,0,9
+72,5,28,81,Partly Cloudy ,4,WNW,outdoor,turf,15,27
+73,5,,,,,,outdoor,turf,21,25
+74,5,71,48,Clear ,0,N,outdoor,artificial,6,18
+75,5,46,68,Clear ,4,SE,outdoor,turf,26,31
+76,6,62,84,Clear ,16,SE,retractable_dome,turf,13,12
+77,6,47,55,Sunny,0,ESE,outdoor,turf,24,7
+78,6,45,61,Sunny,6,NNE,outdoor,artificial,9,21
+79,6,51,55,Sunny,15,SSE,outdoor,artificial,10,17
+80,6,63,88,Partly Cloudy ,15,E,outdoor,turf,11,16
+81,6,100,63,Overcast ,4,S,outdoor,turf,14,30
+82,6,62,84,Partly Cloudy ,0,ESE,outdoor,turf,2,29
+83,6,,,,,,outdoor,artificial,18,3
+84,6,72,55,Overcast ,6,NNE,outdoor,artificial,4,6
+85,6,73,70,Sunny,6,W,outdoor,turf,25,22
+86,6,68,63,Partly Cloudy ,6,SW,outdoor,artificial,8,26
+87,6,58,81,Partly Cloudy ,4,ESE,dome,artificial,5,1
+88,6,40,84,Sunny,0,SW,retractable_dome,turf,31,0
+89,6,59,59,Partly Cloudy ,4,SSE,outdoor,turf,20,23
+90,6,87,65,Overcast ,8,SE,dome,artificial,27,28
+91,7,93,65,Light rain,8,S,outdoor,artificial,21,18
+92,7,41,55,Sunny,13,WNW,outdoor,turf,30,31
+93,7,64,56,Sunny,8,SSW,dome,artificial,26,28
+94,7,66,48,Partly Cloudy ,6,W,retractable_dome,artificial,6,13
+95,7,76,46,Partly Cloudy ,7,SSW,outdoor,turf,16,5
+96,7,71,48,Sunny,12,SSW,outdoor,turf,4,11
+97,7,54,76,Partly Cloudy ,8,NNE,outdoor,turf,7,14
+98,7,41,54,Partly Cloudy ,19,NW,outdoor,artificial,1,2
+99,7,56,41,Partly Cloudy ,9,WNW,outdoor,artificial,17,3
+100,7,53,46,Sunny,6,W,dome,artificial,19,10
+101,7,61,73,Partly Cloudy ,9,WSW,outdoor,turf,15,25
+102,7,,,,,,outdoor,turf,0,22
+103,7,,,,,,retractable_dome,artificial,20,8
+104,7,23,70,Partly Cloudy ,0,ENE,outdoor,turf,27,9
+105,7,51,55,Partly Cloudy ,7,S,outdoor,turf,12,24
+106,8,24,69,Partly Cloudy ,0,N,outdoor,turf,25,9
+107,8,63,59,Partly Cloudy ,15,SW,retractable_dome,artificial,10,1
+108,8,42,61,Sunny,0,N,outdoor,artificial,2,6
+109,8,39,61,Overcast ,15,NNW,outdoor,artificial,3,21
+110,8,39,77,Sunny,9,W,outdoor,turf,26,4
+111,8,45,76,Sunny,0,N,outdoor,turf,16,14
+112,8,75,69,Sunny,0,N,outdoor,turf,12,30
+113,8,51,56,Partly Cloudy ,11,W,outdoor,artificial,5,18
+114,8,69,72,Sunny,4,SE,outdoor,turf,28,15
+115,8,34,77,Sunny,4,N,outdoor,turf,17,29
+116,8,40,84,Partly Cloudy ,6,SSW,retractable_dome,turf,23,0
+117,8,51,55,Sunny,19,W,outdoor,turf,22,7
+118,8,23,61,Sunny,14,NW,outdoor,turf,13,24
+119,8,58,78,Clear ,7,SE,dome,artificial,11,19
+120,8,38,83,Clear ,15,SSE,retractable_dome,artificial,31,8
+121,9,44,57,Clear ,4,NNE,outdoor,turf,19,4
+122,9,35,66,Partly Cloudy ,12,N,outdoor,turf,25,16
+123,9,42,58,Sunny,14,SSE,retractable_dome,artificial,0,8
+124,9,33,52,Sunny,15,S,outdoor,artificial,31,17
+125,9,53,68,Sunny,13,E,retractable_dome,turf,23,12
+126,9,49,43,Sunny,0,N,outdoor,artificial,14,6
+127,9,68,43,Partly Cloudy ,11,NNW,outdoor,turf,29,7
+128,9,33,57,Sunny,22,S,outdoor,turf,21,15
+129,9,,,,,,outdoor,turf,28,27
+130,9,62,40,Overcast ,14,NW,outdoor,artificial,9,18
+131,9,63,57,Overcast ,6,S,outdoor,artificial,22,26
+132,9,41,39,Clear ,6,WNW,outdoor,turf,2,24
+133,9,22,55,Overcast ,8,SW,outdoor,artificial,13,20
+134,10,87,45,Overcast ,16,W,outdoor,artificial,7,6
+135,10,61,43,Partly Cloudy ,8,SW,outdoor,artificial,15,3
+136,10,62,54,Clear ,4,S,retractable_dome,artificial,8,14
+137,10,38,57,Sunny,7,W,outdoor,artificial,24,21
+138,10,41,57,Partly Cloudy ,8,WNW,outdoor,artificial,30,2
+139,10,45,66,Partly Cloudy ,9,N,dome,artificial,27,19
+140,10,57,45,Overcast ,12,SW,dome,artificial,16,10
+141,10,84,62,Overcast ,8,N,outdoor,turf,1,29
+142,10,73,64,Partly Cloudy ,4,SSW,outdoor,turf,9,22
+143,10,19,82,Partly Cloudy ,8,NE,retractable_dome,turf,28,0
+144,10,77,55,Partly Cloudy ,7,SE,outdoor,artificial,20,26
+145,10,87,36,Clear ,0,N,outdoor,turf,5,11
+146,10,62,52,Partly Cloudy ,4,SSE,outdoor,turf,4,23
+147,11,69,75,Partly Cloudy ,4,NNE,outdoor,turf,3,16
+148,11,39,45,Overcast ,6,SW,outdoor,turf,29,31
+149,11,80,32,Light snow,9,SSW,outdoor,turf,17,5
+150,11,29,48,Sunny,0,SSE,outdoor,turf,1,4
+151,11,55,34,Overcast ,9,SSW,outdoor,turf,12,7
+152,11,60,77,Partly Cloudy ,19,SSE,dome,artificial,6,19
+153,11,67,19,Partly Cloudy ,8,WNW,outdoor,turf,26,15
+154,11,45,41,Overcast ,7,SSW,outdoor,artificial,27,20
+155,11,78,35,Light snow,0,N,dome,artificial,9,28
+156,11,56,70,Partly Cloudy ,9,NW,outdoor,turf,22,25
+157,11,69,28,Overcast ,11,SW,outdoor,turf,23,11
+158,11,7,70,Partly Cloudy ,17,NNW,retractable_dome,turf,10,0
+159,11,100,30,Mist,4,WNW,retractable_dome,artificial,18,13
+160,11,50,28,Overcast ,13,WNW,outdoor,turf,24,30
+161,12,94,57,Mist,0,N,outdoor,turf,15,22
+162,12,77,53,Light rain,12,S,outdoor,turf,29,5
+163,12,35,52,Partly Cloudy ,9,S,outdoor,turf,30,23
+164,12,94,50,Mist,6,ENE,dome,artificial,7,1
+165,12,96,46,Fog,0,N,outdoor,artificial,11,17
+166,12,57,72,Sunny,6,SW,retractable_dome,turf,6,12
+167,12,39,58,Sunny,12,WSW,outdoor,artificial,10,18
+168,12,71,50,Overcast ,11,SSE,retractable_dome,artificial,14,13
+169,12,46,70,Partly Cloudy ,7,NW,outdoor,turf,28,25
+170,12,77,54,Overcast ,7,SSW,outdoor,artificial,0,26
+171,12,33,40,Partly Cloudy ,14,N,outdoor,turf,16,9
+172,12,48,61,Partly Cloudy ,7,W,outdoor,turf,31,27
+173,12,46,48,Clear ,0,N,outdoor,artificial,8,20
+174,12,61,43,Overcast ,35,WSW,dome,artificial,21,3
+175,12,54,63,Partly Cloudy ,6,N,dome,artificial,2,19
+176,13,59,34,Partly Cloudy ,11,WNW,dome,artificial,5,10
+177,13,21,57,Sunny,4,WNW,retractable_dome,artificial,23,8
+178,13,46,68,Clear ,0,N,outdoor,turf,26,27
+179,13,53,73,Partly Cloudy ,4,N,outdoor,turf,20,14
+180,13,65,75,Partly Cloudy ,12,SSE,retractable_dome,turf,30,12
+181,13,58,59,Overcast ,15,SSW,outdoor,turf,19,24
+182,13,67,55,Partly Cloudy ,21,SSW,outdoor,artificial,7,3
+183,13,53,14,Partly Cloudy ,16,NW,outdoor,artificial,4,17
+184,13,50,52,Partly Cloudy ,9,SW,outdoor,artificial,25,2
+185,13,50,75,Partly Cloudy ,6,E,outdoor,turf,6,29
+186,13,72,63,Partly Cloudy ,26,SW,retractable_dome,artificial,31,13
+187,13,68,66,Sunny,14,SSW,dome,artificial,22,28
+188,13,47,67,Sunny,8,WSW,dome,artificial,0,1
+189,13,63,28,Overcast ,15,NNW,outdoor,turf,18,11
+190,13,50,28,Clear ,14,N,outdoor,turf,9,15
+191,13,76,45,Moderate rain,6,NW,outdoor,artificial,16,21
+192,14,55,36,Overcast ,9,ESE,outdoor,turf,8,5
+193,14,69,34,Partly Cloudy ,13,SSE,outdoor,artificial,21,17
+194,14,66,54,Overcast ,8,NNE,dome,artificial,4,19
+195,14,65,79,Partly Cloudy ,11,NW,outdoor,turf,2,16
+196,14,60,37,Partly Cloudy ,12,NNE,outdoor,turf,13,7
+197,14,,,,,,outdoor,turf,28,31
+198,14,67,63,Overcast ,14,N,outdoor,turf,12,14
+199,14,75,34,Sunny,9,NE,outdoor,artificial,24,6
+200,14,66,45,Overcast ,8,E,outdoor,turf,20,30
+201,14,51,34,Sunny,11,E,dome,artificial,29,10
+202,14,46,70,Partly Cloudy ,0,N,retractable_dome,turf,15,0
+203,14,,,,,,outdoor,turf,3,9
+204,14,,,,,,outdoor,turf,26,23
+205,14,82,61,Overcast ,7,WSW,outdoor,turf,27,22
+206,14,68,68,Partly Cloudy ,8,NNW,outdoor,turf,18,25
+207,14,93,34,Patchy light snow,0,N,outdoor,turf,1,11
+208,15,81,32,Clear ,4,ESE,dome,artificial,0,28
+209,15,93,45,Mist,7,S,retractable_dome,artificial,12,13
+210,15,75,59,Overcast ,13,S,outdoor,turf,22,15
+211,15,50,48,Sunny,8,NW,dome,artificial,24,1
+212,15,55,42,Sunny,6,NNW,outdoor,artificial,16,18
+213,15,57,45,Overcast ,11,NNW,outdoor,artificial,31,20
+214,15,100,43,Mist,7,WSW,outdoor,turf,6,7
+215,15,93,37,Light drizzle,11,W,outdoor,artificial,11,3
+216,15,66,48,Overcast ,0,N,outdoor,artificial,14,2
+217,15,28,54,Sunny,0,N,outdoor,turf,29,4
+218,15,52,63,Partly Cloudy ,7,WSW,outdoor,turf,9,25
+219,15,66,52,Overcast ,0,N,outdoor,turf,21,30
+220,15,76,52,Mist,4,W,dome,artificial,17,10
+221,15,66,48,Partly Cloudy ,6,NW,outdoor,artificial,27,26
+222,15,57,46,Partly Cloudy ,16,NNW,outdoor,turf,8,23
+223,15,93,45,Light rain,11,SSE,outdoor,turf,19,5
+224,16,58,61,Partly Cloudy ,0,N,outdoor,turf,30,14
+225,16,56,37,Overcast ,0,N,outdoor,turf,23,31
+226,16,72,61,Overcast ,0,N,outdoor,turf,25,27
+227,16,75,34,Overcast ,6,NW,outdoor,artificial,18,21
+228,16,69,75,Partly Cloudy ,11,SE,outdoor,turf,17,16
+229,16,64,30,Overcast ,4,SSE,outdoor,turf,15,24
+230,16,77,54,Partly Cloudy ,6,N,retractable_dome,turf,2,12
+231,16,57,48,Overcast ,4,E,outdoor,turf,7,4
+232,16,,,,,,outdoor,turf,10,5
+233,16,81,57,Overcast ,4,ESE,dome,artificial,1,19
+234,16,65,75,Overcast ,0,SE,outdoor,turf,11,29
+235,16,70,42,Overcast ,16,SE,dome,artificial,20,28
+236,16,,,,,,outdoor,turf,3,22
+237,16,,,,,,retractable_dome,artificial,13,8
+238,16,48,61,Partly Cloudy ,4,S,retractable_dome,turf,26,0
+239,16,66,48,Partly Cloudy ,0,N,outdoor,artificial,9,6
+240,17,79,77,Partly Cloudy ,12,SE,outdoor,turf,21,16
+241,17,74,50,Partly Cloudy ,9,WSW,outdoor,artificial,3,18
+242,17,93,41,Overcast ,9,NW,retractable_dome,turf,14,12
+243,17,73,18,Overcast ,4,N,outdoor,artificial,5,17
+244,17,83,73,Overcast ,8,SSW,outdoor,turf,19,29
+245,17,93,41,Light rain,8,NNW,outdoor,turf,13,30
+246,17,55,57,Partly Cloudy ,6,W,outdoor,artificial,7,2
+247,17,41,39,Sunny,6,S,outdoor,turf,25,15
+248,17,55,57,Sunny,0,N,outdoor,turf,8,31
+249,17,81,48,Overcast ,8,SSW,outdoor,artificial,23,20
+250,17,38,36,Partly Cloudy ,4,ENE,outdoor,turf,22,9
+251,17,,,,,,outdoor,turf,0,27
+252,17,,,,,,outdoor,turf,10,11
+253,17,88,61,Overcast ,4,W,dome,artificial,4,1
+254,17,81,45,Overcast ,6,SSE,outdoor,artificial,28,26
+255,17,,,,,,outdoor,turf,6,24

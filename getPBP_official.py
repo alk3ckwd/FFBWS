@@ -4,6 +4,14 @@ import os, fnmatch
 import pandas as pd
 from collections import defaultdict
 
+location = 'Home'
+save_path = ''
+
+if location == 'Home':
+    save_path = '/users/mmcvicar/Documents/FFBAWS/'
+else:
+    save_path = 'C:/Users/mmcvicar/Documents/FFBWS/FFBWS/'
+
 refresh = input('Do you want to refresh the data? (Y/N)')
 if refresh == 'Y':
 
@@ -13,21 +21,21 @@ if refresh == 'Y':
     schedule_url = 'https://api.sportsdatallc.org/nfl-ot1/games/2015/REG/schedule.json?api_key={key}'.format(key=key2)
     response = requests.get(url=schedule_url)
     sched_data = json.loads(response.text)
-    with open('/users/mmcvicar/Documents/FFBAWS/2015_schedule_official.txt', 'w') as output:
+    with open(save_path + '2015_schedule_official.txt', 'w') as output:
         json.dump(sched_data, output)
 
 
     new_files = 0
     for week in sched_data['weeks']:
         for game in week['games']:
-            if not os.path.isfile('/users/mmcvicar/Documents/FFBAWS/pbp_data_official/gamepbp_{game}.txt'.format(game=game['id'])):
+            if not os.path.isfile(save_path + 'pbp_data_official/gamepbp_{game}.txt'.format(game=game['id'])):
                 if game['status'] == 'closed':
                     base_url = 'https://api.sportsdatallc.org/nfl-ot1/games/{gameID}/pbp.json?api_key={key}'.format(gameID=game['id'], key=key2)
                     r = requests.get(base_url)
                     data = json.loads(r.text)
 
 
-                    with open('/users/mmcvicar/Documents/FFBAWS/pbp_official/gamepbp_{game}.txt'.format(game=game['id']), 'w') as output:
+                    with open(save_path + 'pbp_official/gamepbp_{game}.txt'.format(game=game['id']), 'w') as output:
                         json.dump(data, output)
                     new_files += 1
 
@@ -109,7 +117,7 @@ df_main = pd.DataFrame(columns = ['offense_team', 'defense_team', 'play_type', '
 df_full = pd.DataFrame(columns = ['offense_team', 'defense_team', 'play_type', 'pass_type', 'target_name', 'cmpt_flag'])
 
 game = 0
-rootdir = 'C:/Users/mmcvicar/Documents/FFBWS/FFBWS/pbp_official/'
+rootdir = save_path + 'pbp_official/'
 for subdir, dirs, files in os.walk(rootdir):
     for file in fnmatch.filter(files, '*.txt'):
         offense_team = []
@@ -142,21 +150,20 @@ for team in teams:
         part[pass_type] = df_full[(df_full['defense_team'] == team) & (df_full['pass_type'] == pass_type) & (df_full['cmpt_flag'] == "C")].count()['play_type'] / df_full[(df_full['defense_team'] == team) & (df_full['pass_type'] == pass_type)].count()['play_type']
     defense_pass_PCT[team] = part
 
-with open('C:/users/mmcvicar/Documents/FFBWS/FFBWS/Offense_Pass_PCT.txt', 'w') as output:
+with open(save_path + 'Offense_Pass_PCT.txt', 'w') as output:
     json.dump(offense_pass_PCT, output)
 
-with open('C:/users/mmcvicar/Documents/FFBWS/FFBWS/Defense_Pass_PCT.txt', 'w') as output:
+with open(save_path + 'Defense_Pass_PCT.txt', 'w') as output:
     json.dump(defense_pass_PCT, output)
 
 
-off_pct = pd.read_json('C:/Users/mmcvicar/Documents/FFBWS/FFBWS/Offense_Pass_PCT.txt',orient='index')
-off_pct = off_pct[['deep left', 'deep middle', 'deep right', 'short left', 'short middle', 'short right']]
 
-def_pct = pd.read_json('C:/Users/mmcvicar/Documents/FFBWS/FFBWS/Defense_Pass_PCT.txt',orient='index')
-def_pct = def_pct[['deep left', 'deep middle', 'deep right', 'short left', 'short middle', 'short right']]
+
+top_targets = df_full[['offense_team', 'pass_type', 'target_name']]
+top_targets = top_targets.groupby(['offense_team', 'pass_type']).agg(lambda x:x.value_counts().index[0])
 
 results = defaultdict(lambda: defaultdict(dict))
-for index, value in test.itertuples():
+for index, value in top_targets.itertuples():
     for i, key in enumerate(index):
         if i == 0:
             nested = results[key]
@@ -165,8 +172,25 @@ for index, value in test.itertuples():
         else:
             nested = nested[key]
 
-with open('C:/users/mmcvicar/Documents/FFBWS/FFBWS/Top_Targets.txt', 'w') as output:
+with open(save_path + 'Top_Targets.txt', 'w') as output:
     json.dump(results, output)
 
-top_targets = df_full[['offense_team', 'pass_type', 'target_name']]
-top_targets.groupby(['offense_team', 'pass_type']).agg(lambda x:x.value_counts().index[0])
+with open('/Users/mmcvicar/Documents/FFBAWS/teams.txt', mode='r') as infile:
+    reader = csv.reader(infile)
+    teamDict = {rows[0]:rows[1] for rows in reader}
+    
+def getTeamId(team2, teamDict):
+    for index, team in teamDict.items():
+        if team == team2:
+            return index
+            
+targets = pd.read_json(save_path + 'Top_Targets.txt',orient='index')
+for index, row in targets.iterrows():
+    targets.loc[index, 'team_id'] = getTeamId(index, teamDict)
+targets.to_csv(save_path + 'targets_csv.txt', index = True)
+
+off_pct = pd.read_json(save_path + 'Offense_Pass_PCT.txt',orient='index')
+off_pct = off_pct[['deep left', 'deep middle', 'deep right', 'short left', 'short middle', 'short right']]
+
+def_pct = pd.read_json(save_path + 'Defense_Pass_PCT.txt',orient='index')
+def_pct = def_pct[['deep left', 'deep middle', 'deep right', 'short left', 'short middle', 'short right']]

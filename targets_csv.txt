@@ -1,33 +1,33 @@
-,,deep left,deep middle,deep right,short left,short middle,short right
-ARI, ,Michael Floyd,Michael Floyd,Larry Fitzgerald,David Johnson,Larry Fitzgerald,Larry Fitzgerald
-ATL, ,Julio Jones,Julio Jones,Julio Jones,Julio Jones,Julio Jones,Julio Jones
-BAL, ,Steve Smith,Crockett Gillmore,Steve Smith,Steve Smith,Justin Forsett,Steve Smith
-BUF, ,Charles Clay,Charles Clay,Charles Clay,Percy Harvin,Karlos Williams,Charles Clay
-CAR, ,Ted Ginn,Ted Ginn,Ted Ginn,Greg Olsen,Greg Olsen,Greg Olsen
-CHI, ,Marquess Wilson,Marquess Wilson,Martellus Bennett,Martellus Bennett,Eddie Royal,Martellus Bennett
-CIN, ,A.J. Green,Mohamed Sanu,A.J. Green,Tyler Eifert,Tyler Eifert,A.J. Green
-CLE, ,Travis Benjamin,Travis Benjamin,Travis Benjamin,Taylor Gabriel,Gary Barnidge,Travis Benjamin
-DAL, ,Terrance Williams,Terrance Williams,Terrance Williams,Jason Witten,Jason Witten,Jason Witten
-DEN, ,Emmanuel Sanders,Emmanuel Sanders,Emmanuel Sanders,Demaryius Thomas,Owen Daniels,Demaryius Thomas
-DET, ,Golden Tate,Golden Tate,Calvin Johnson,Calvin Johnson,Theo Riddick,Calvin Johnson
-GB, ,James Jones,Randall Cobb,Randall Cobb,Randall Cobb,Richard Rodgers,Randall Cobb
-HOU, ,DeAndre Hopkins,DeAndre Hopkins,DeAndre Hopkins,DeAndre Hopkins,Cecil Shorts,DeAndre Hopkins
-IND, ,T.Y. Hilton,Donte Moncrief,T.Y. Hilton,Donte Moncrief,T.Y. Hilton,T.Y. Hilton
-JAC, ,Allen Robinson,Allen Robinson,Allen Robinson,Rashad Greene,Allen Hurns,Allen Robinson
-KC, ,Jeremy Maclin,Jeremy Maclin,Jeremy Maclin,Jamaal Charles,Jeremy Maclin,Jeremy Maclin
-MIA, ,Jordan Cameron,Rishard Matthews,Rishard Matthews,Jarvis Landry,Jarvis Landry,Jarvis Landry
-MIN, ,Mike Wallace,Mike Wallace,Kyle Rudolph,Mike Wallace,Adrian Peterson,Kyle Rudolph
-NE, ,Julian Edelman,Rob Gronkowski,Rob Gronkowski,Dion Lewis,Julian Edelman,Julian Edelman
-NO, ,Willie Snead,Benjamin Watson,Brandon Coleman,Mark Ingram,Marques Colston,Brandin Cooks
-NYG, ,Odell Beckham,Dwayne Harris,Odell Beckham,Odell Beckham,Larry Donnell,Odell Beckham
-NYJ, ,Brandon Marshall,Quincy Enunwa,Brandon Marshall,Brandon Marshall,Eric Decker,Brandon Marshall
-OAK, ,Michael Crabtree,Michael Crabtree,Michael Crabtree,Amari Cooper,Michael Crabtree,Michael Crabtree
-PHI, ,Riley Cooper,Jordan Matthews,Jordan Matthews,Jordan Matthews,Jordan Matthews,Darren Sproles
-PIT, ,Antonio Brown,Darrius Heyward-Bey,Antonio Brown,Antonio Brown,Le'Veon Bell,Antonio Brown
-SD, ,Keenan Allen,Malcom Floyd,Malcom Floyd,Keenan Allen,Keenan Allen,Keenan Allen
-SEA, ,Jermaine Kearse,Doug Baldwin,Jermaine Kearse,Jimmy Graham,Jimmy Graham,Jimmy Graham
-SF, ,Torrey Smith,Torrey Smith,Anquan Boldin,Anquan Boldin,Anquan Boldin,Anquan Boldin
-STL, ,Lance Kendricks,Kenny Britt,Stedman Bailey,Tavon Austin,Jared Cook,Kenny Britt
-TB, ,Mike Evans,Mike Evans,Vincent Jackson,Charles Sims,Vincent Jackson,Mike Evans
-TEN, ,Kendall Wright,Harry Douglas,Harry Douglas,Kendall Wright,Kendall Wright,Bishop Sankey
-WAS, ,Pierre Garcon,Pierre Garcon,Pierre Garcon,Pierre Garcon,Pierre Garcon,Ryan Grant
+team_id,deep left,deep middle,deep right,short left,short middle,short right
+0,Michael Floyd,John Brown,John Brown,Larry Fitzgerald,Larry Fitzgerald,Larry Fitzgerald
+1,Julio Jones,Julio Jones,Julio Jones,Julio Jones,Julio Jones,Julio Jones
+2,Kamar Aiken,Crockett Gillmore,Kamar Aiken,Kamar Aiken,Justin Forsett,Steve Smith
+3,Sammy Watkins,Sammy Watkins,Sammy Watkins,LeSean McCoy,Charles Clay,Robert Woods
+4,Ted Ginn,Ted Ginn,Greg Olsen,Ted Ginn,Greg Olsen,Greg Olsen
+5,Alshon Jeffery,Martellus Bennett,Alshon Jeffery,Martellus Bennett,Alshon Jeffery,Alshon Jeffery
+6,A.J. Green,Marvin Jones,A.J. Green,A.J. Green,Tyler Eifert,A.J. Green
+7,Travis Benjamin,Travis Benjamin,Travis Benjamin,Gary Barnidge,Gary Barnidge,Travis Benjamin
+8,Dez Bryant,Dez Bryant,Terrance Williams,Jason Witten,Jason Witten,Jason Witten
+9,Demaryius Thomas,Emmanuel Sanders,Emmanuel Sanders,Demaryius Thomas,Demaryius Thomas,Demaryius Thomas
+10,Calvin Johnson,Calvin Johnson,Calvin Johnson,Calvin Johnson,Golden Tate,Golden Tate
+11,James Jones,Randall Cobb,James Jones,Randall Cobb,Randall Cobb,Randall Cobb
+12,DeAndre Hopkins,DeAndre Hopkins,DeAndre Hopkins,DeAndre Hopkins,DeAndre Hopkins,DeAndre Hopkins
+13,T.Y. Hilton,Coby Fleener,T.Y. Hilton,Donte Moncrief,Donte Moncrief,T.Y. Hilton
+14,Allen Robinson,Allen Robinson,Allen Robinson,Julius Thomas,T.J. Yeldon,Allen Robinson
+15,Jeremy Maclin,Jeremy Maclin,Jeremy Maclin,Travis Kelce,Travis Kelce,Jeremy Maclin
+16,Jarvis Landry,Rishard Matthews,Kenny Stills,Jarvis Landry,Jarvis Landry,Jarvis Landry
+17,Stefon Diggs,Mike Wallace,Mike Wallace,Stefon Diggs,Kyle Rudolph,Kyle Rudolph
+18,Brandon LaFell,Brandon LaFell,Rob Gronkowski,Brandon LaFell,Danny Amendola,Rob Gronkowski
+19,Brandin Cooks,Benjamin Watson,Brandin Cooks,Mark Ingram,Benjamin Watson,Brandin Cooks
+20,Odell Beckham,Odell Beckham,Odell Beckham,Odell Beckham,Odell Beckham,Odell Beckham
+21,Brandon Marshall,Eric Decker,Eric Decker,Brandon Marshall,Eric Decker,Brandon Marshall
+22,Amari Cooper,Michael Crabtree,Amari Cooper,Amari Cooper,Michael Crabtree,Michael Crabtree
+23,Riley Cooper,Jordan Matthews,Jordan Matthews,Jordan Matthews,Jordan Matthews,Jordan Matthews
+24,Antonio Brown,Antonio Brown,Antonio Brown,Antonio Brown,Heath Miller,Antonio Brown
+25,Malcom Floyd,Malcom Floyd,Malcom Floyd,Keenan Allen,Antonio Gates,Danny Woodhead
+26,Doug Baldwin,Doug Baldwin,Tyler Lockett,Jimmy Graham,Jimmy Graham,Doug Baldwin
+27,Torrey Smith,Torrey Smith,Anquan Boldin,Anquan Boldin,Anquan Boldin,Anquan Boldin
+28,Kenny Britt,Kenny Britt,Kenny Britt,Tavon Austin,Jared Cook,Tavon Austin
+29,Mike Evans,Mike Evans,Mike Evans,Charles Sims,Mike Evans,Mike Evans
+30,Kendall Wright,Dorial Green-Beckham,Dorial Green-Beckham,Delanie Walker,Delanie Walker,Delanie Walker
+31,Pierre Garcon,Pierre Garcon,Pierre Garcon,Jordan Reed,Jordan Reed,Jordan Reed

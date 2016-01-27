@@ -1,65 +1,121 @@
-,week,humidity,temp,condition,wind_speed,wind_dir,venue_type,venue_surface,away_team,home_team
-0,1,58,69,Partly Cloudy,10,NW,outdoor,turf,16,31
-1,1,66,84,Cloudy,8,NNE,outdoor,turf,30,29
-2,1, , , , , ,dome,artificial,23,1
-3,1,,77,,7 mph,North,outdoor,turf,4,14
-4,1,8,88,Partly Sunny,13,NW,outdoor,turf,2,9
-5,1,63,70,Partly Cloudy,5,S,outdoor,turf,17,27
-6,1, , , , , ,dome,artificial,26,28
-7,1,39,68,Mostly sunny,11,WNW,outdoor,turf,11,5
-8,1,49,77,Cloudy,8,SW,outdoor,artificial,7,21
-9,1,78,56,Cloudy,15,W,outdoor,artificial,13,3
-10,1, ,65,Rainy and cool,7,East,outdoor,artificial,24,18
-11,1, , , , , ,retractable_dome,artificial,20,8
-12,1, , , , , ,retractable_dome,turf,15,12
-13,1, , , , , ,retractable_dome,turf,19,0
-14,1,47,84,Sunny,WSW,10,outdoor,turf,10,25
-15,1,59,73,Cloudy,9,WNW,outdoor,turf,6,22
-16,2, , , , , ,dome,artificial,29,19
-17,2, ,67,Partly Cloudy,,,outdoor,artificial,10,17
-18,2,57,62,"Sunny, some clouds",7,N,outdoor,artificial,18,3
-19,2,47,69,Partly Cloudy,6,NE,outdoor,artificial,25,6
-20,2,59,87,Cloudy,13,South,outdoor,turf,9,15
-21,2,47,70,Mostly sunny,6,S,outdoor,turf,0,5
-22,2,37,77,Partly Cloudy,15,NNE,outdoor,turf,8,23
-23,2,60,66,Partly Cloudy,NNE 10,From,outdoor,turf,27,24
-24,2, , , , , ,retractable_dome,artificial,21,13
-25,2,56,72,Cloudy,9,N,outdoor,turf,28,31
-26,2,59,64,Sunny,12 ,NE,outdoor,turf,30,7
-27,2,47,73,Mostly Cloudy,9,North,outdoor,artificial,1,20
-28,2,32,80,Sunny,8,WNW,outdoor,turf,2,22
-29,2,55,87,Zero Percent Chance of Rain,5,East,outdoor,turf,16,14
-30,2,43,88,Sunny,6,NE,outdoor,turf,12,4
-31,2,52,62,Clear,East 9,South,outdoor,turf,26,11
-32,3, , , , , ,retractable_dome,turf,29,12
-33,3, , , , , ,dome,artificial,9,10
-34,3,20,70,Cloudy,12,ENE,outdoor,artificial,6,2
-35,3, ,75,Sunny,12,South,outdoor,artificial,25,17
-36,3, , , , , ,dome,artificial,24,28
-37,3,41,68,Clear and cool,6,East,outdoor,artificial,14,18
-38,3,77,74,Cloudy,3,ENE,outdoor,turf,13,30
-39,3,90,69,Rain,9,NNE,outdoor,turf,19,4
-40,3,52,66, ,7,East,outdoor,artificial,23,21
-41,3,53,60,Sunny,5,NE,outdoor,artificial,5,26
-42,3, , , , , ,retractable_dome,turf,27,0
-43,3,93,67,Light Showers,5,North,outdoor,turf,15,11
-44,3,65,87,Mostly Cloudy,6,SE,outdoor,turf,3,16
-45,3,60,71,Clear,4,SSW,outdoor,artificial,31,20
-46,3,62,75,Partly Cloudy,16,S-SE,outdoor,turf,22,7
-47,3, , , , , ,retractable_dome,artificial,1,8
-48,4,78,68,Cloudy,11,WNW,outdoor,turf,7,25
-49,4, , , , , ,dome,artificial,12,1
-50,4,64,68,Sunny,5,E,outdoor,artificial,15,6
-51,4,83,55,Cloudy,12,NE,outdoor,turf,22,5
-52,4,57,60,Cloudy,9,NE,outdoor,turf,17,9
-53,4,62,63,Cloudy,ENE 8,From,outdoor,turf,2,24
-54,4, , , , , ,retractable_dome,turf,28,0
-55,4,41,74,Sunny,8,North,outdoor,artificial,10,26
-56,4,92,74,Cloudy,5,NE,outdoor,turf,4,29
-57,4,82,58,Cloudy,13,NE,outdoor,turf,23,31
-58,4,66,60,Mostly cloudy,8,E,outdoor,artificial,20,3
-59,4,36,74,Sunny,5,Southeast,outdoor,turf,11,27
-60,4, , , , , ,retractable_dome,artificial,14,13
-61,4, , , , , ,retractable_dome,artificial,21,16
-62,4, , , , , ,dome,artificial,8,19
-63,5, , , , , ,retractable_dome,turf,13,12
+id,week,venue_type,venue_surface,away_team_id,home_team_id
+0,1,outdoor,turf,16,31
+1,1,outdoor,turf,30,29
+2,1,dome,artificial,23,1
+3,1,outdoor,turf,4,14
+4,1,outdoor,turf,2,9
+5,1,outdoor,turf,17,27
+6,1,dome,artificial,26,28
+7,1,outdoor,turf,11,5
+8,1,outdoor,artificial,7,21
+9,1,outdoor,artificial,13,3
+10,1,outdoor,artificial,24,18
+11,1,retractable_dome,artificial,20,8
+12,1,retractable_dome,turf,15,12
+13,1,retractable_dome,turf,19,0
+14,1,outdoor,turf,10,25
+15,1,outdoor,turf,6,22
+16,2,dome,artificial,29,19
+17,2,outdoor,artificial,10,17
+18,2,outdoor,artificial,18,3
+19,2,outdoor,artificial,25,6
+20,2,outdoor,turf,9,15
+21,2,outdoor,turf,0,5
+22,2,outdoor,turf,8,23
+23,2,outdoor,turf,27,24
+24,2,retractable_dome,artificial,21,13
+25,2,outdoor,turf,28,31
+26,2,outdoor,turf,30,7
+27,2,outdoor,artificial,1,20
+28,2,outdoor,turf,2,22
+29,2,outdoor,turf,16,14
+30,2,outdoor,turf,12,4
+31,2,outdoor,turf,26,11
+32,3,retractable_dome,turf,29,12
+33,3,dome,artificial,9,10
+34,3,outdoor,artificial,6,2
+35,3,outdoor,artificial,25,17
+36,3,dome,artificial,24,28
+37,3,outdoor,artificial,14,18
+38,3,outdoor,turf,13,30
+39,3,outdoor,turf,19,4
+40,3,outdoor,artificial,23,21
+41,3,outdoor,artificial,5,26
+42,3,retractable_dome,turf,27,0
+43,3,outdoor,turf,15,11
+44,3,outdoor,turf,3,16
+45,3,outdoor,artificial,31,20
+46,3,outdoor,turf,22,7
+47,3,retractable_dome,artificial,1,8
+48,4,outdoor,turf,7,25
+49,4,dome,artificial,12,1
+50,4,outdoor,artificial,15,6
+51,4,outdoor,turf,22,5
+52,4,outdoor,turf,17,9
+53,4,outdoor,turf,2,24
+54,4,retractable_dome,turf,28,0
+55,4,outdoor,artificial,10,26
+56,4,outdoor,turf,4,29
+57,4,outdoor,turf,23,31
+58,4,outdoor,artificial,20,3
+59,4,outdoor,turf,11,27
+60,4,retractable_dome,artificial,14,13
+61,4,retractable_dome,artificial,21,16
+62,4,dome,artificial,8,19
+63,5,retractable_dome,artificial,18,8
+64,5,outdoor,turf,28,11
+65,5,retractable_dome,turf,13,12
+66,5,outdoor,turf,5,15
+67,5,outdoor,turf,14,29
+68,5,outdoor,turf,24,25
+69,5,outdoor,artificial,7,2
+70,5,dome,artificial,31,1
+71,5,outdoor,turf,9,22
+72,5,dome,artificial,0,10
+73,5,outdoor,turf,3,30
+74,5,outdoor,artificial,26,6
+75,5,outdoor,turf,19,23
+76,5,outdoor,artificial,27,20
+77,6,outdoor,turf,2,27
+78,6,outdoor,artificial,4,26
+79,6,outdoor,turf,25,11
+80,6,outdoor,turf,12,14
+81,6,outdoor,artificial,6,3
+82,6,outdoor,turf,0,24
+83,6,outdoor,turf,20,23
+84,6,dome,artificial,5,10
+85,6,outdoor,turf,16,30
+86,6,outdoor,artificial,15,17
+87,6,retractable_dome,artificial,18,13
+88,6,dome,artificial,1,19
+89,6,outdoor,turf,9,7
+90,6,outdoor,artificial,31,21
+91,7,outdoor,turf,22,25
+92,7,outdoor,turf,1,30
+93,7,dome,artificial,17,10
+94,7,outdoor,artificial,8,20
+95,7,retractable_dome,artificial,3,14
+96,7,retractable_dome,turf,2,0
+97,7,retractable_dome,artificial,19,13
+98,7,outdoor,turf,12,16
+99,7,outdoor,turf,26,27
+100,7,outdoor,turf,29,31
+101,7,outdoor,turf,23,4
+102,7,dome,artificial,7,28
+103,7,outdoor,turf,24,15
+104,7,outdoor,artificial,21,18
+105,8,dome,artificial,27,28
+106,8,dome,artificial,20,19
+107,8,outdoor,artificial,16,18
+108,8,outdoor,turf,17,5
+109,8,outdoor,turf,13,4
+110,8,outdoor,artificial,25,2
+111,8,outdoor,turf,11,9
+112,8,retractable_dome,artificial,26,8
+113,8,dome,artificial,29,1
+114,8,retractable_dome,turf,30,12
+115,8,outdoor,turf,21,22
+116,8,outdoor,turf,6,24
+117,8,retractable_dome,artificial,10,15
+118,8,outdoor,turf,0,7
+119,9,outdoor,artificial,7,6

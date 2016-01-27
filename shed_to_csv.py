@@ -1,11 +1,12 @@
 import json
 import csv
 import pandas as pd
+import numpy
 
-f = open('/Users/mmcvicar/Documents/FFBAWS/2015_schedule_official.txt').read()
+f = open('/Users/mmcvicar/Documents/Projects/FFBAWS/2015_schedule_official.txt').read()
 sched = json.loads(f)
 
-with open('/Users/mmcvicar/Documents/FFBAWS/teams.txt', mode='r') as infile:
+with open('/Users/mmcvicar/Documents/Projects/FFBAWS/teams.txt', mode='r') as infile:
     reader = csv.reader(infile)
     teamDict = {rows[0]:rows[1] for rows in reader}
 
@@ -14,11 +15,11 @@ with open('/Users/mmcvicar/Documents/FFBAWS/teams.txt', mode='r') as infile:
 home_team = []
 away_team = []
 week = []
-humidity = []
-temp = []
-condition = []
-wind_speed = []
-wind_dir = []
+#humidity = []
+#temp = []
+#condition = []
+#wind_speed = []
+#wind_dir = []
 venue_type = []
 venue_surface=[]
 
@@ -28,9 +29,9 @@ def getTeamId(game, teamDict):
     
     for index, team in teamDict.items():
         if team == home_name:
-            home_team.append(index)
+            home_team.append(int(index)+1)
         if team == away_name:
-            away_team.append(index)
+            away_team.append(int(index)+1)
 
 def setWeather(weather,roof):
         if 'dome' not in roof:
@@ -46,15 +47,15 @@ def setWeather(weather,roof):
                         if 'rain' in weather[:weather.index('Temp')-1]:
                                 humidity.append(100)
                         else:
-                                humidity.append(' ')
+                                humidity.append('')
                         temp.append(weather[weather.index('Temp:')+6:weather.index(',')-3])
                 
         else:
-                condition.append(' ')
-                humidity.append(' ')
-                temp.append(' ')
-                wind_speed.append(' ')
-                wind_dir.append(' ')
+                condition.append('')
+                humidity.append(numpy.nan)
+                temp.append(numpy.nan)
+                wind_speed.append(numpy.nan)
+                wind_dir.append('')
 
         
 for weeks in sched['weeks']:
@@ -62,27 +63,28 @@ for weeks in sched['weeks']:
         if game['status'] == 'closed':
                 week.append(weeks['sequence'])
                 getTeamId(game, teamDict)
-                print(game['id'])
+                #print(game['id'])
                 venue_type.append(game['venue']['roof_type'])
                 venue_surface.append(game['venue']['surface'])
-                if 'weather' not in game:
-                        weather = 'dome'
-                else:
-                        weather = game['weather']
-
-                setWeather(weather, game['venue']['roof_type'])
+##                if 'weather' not in game:
+##                        weather = 'dome'
+##                else:
+##                        weather = game['weather']
+##
+##                setWeather(weather, game['venue']['roof_type'])
         
 
 sched_df = pd.concat([pd.DataFrame(week, columns = ['week']), 
-                pd.DataFrame(humidity, columns = ['humidity']), pd.DataFrame(temp, columns = ['temp']), pd.DataFrame(condition, columns = ['condition']),
-                pd.DataFrame(wind_speed, columns = ['wind_speed']), pd.DataFrame(wind_dir, columns = ['wind_dir']),
+  #              pd.DataFrame(humidity, columns = ['humidity']), pd.DataFrame(temp, columns = ['temp']), pd.DataFrame(condition, columns = ['condition']),
+ #               pd.DataFrame(wind_speed, columns = ['wind_speed']), pd.DataFrame(wind_dir, columns = ['wind_dir']),
                 pd.DataFrame(venue_type, columns = ['venue_type']), pd.DataFrame(venue_surface, columns = ['venue_surface']),
-                pd.DataFrame(away_team, columns = ['away_team']), pd.DataFrame(home_team, columns = ['home_team'])], axis = 2)
+                pd.DataFrame(away_team, columns = ['away_team_id']), pd.DataFrame(home_team, columns = ['home_team_id'])], axis = 2)
 
+sched_df.index.name = 'id'
+sched_df.index = sched_df.index.astype(int)
+sched_df.index += 1
 
-
-
-sched_df.to_csv('/Users/mmcvicar/Documents/FFBAWS/nflsched_csv_official.txt', index = True)
+sched_df.to_csv('/Users/mmcvicar/Documents/Projects/FFBAWS/nflsched_official.csv', index = True)
 
 
 		

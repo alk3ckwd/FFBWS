@@ -28,6 +28,7 @@ for team in off_data:
         off_short_left.append(off_data[team]['short left'])
         off_short_middle.append(off_data[team]['short middle'])
         off_short_right.append(off_data[team]['short right'])
+<<<<<<< HEAD
         off_long_left.append(off_data[team]['long left'])
         off_long_middle.append(off_data[team]['long middle'])
         off_long_right.append(off_data[team]['long right'])
@@ -37,6 +38,17 @@ for team in off_data:
         def_long_left.append(def_data[team]['long left'])
         def_long_middle.append(def_data[team]['long middle'])
         def_long_right.append(def_data[team]['long right'])
+=======
+        off_long_left.append(off_data[team]['deep left'])
+        off_long_middle.append(off_data[team]['deep middle'])
+        off_long_right.append(off_data[team]['deep right'])
+        def_short_left.append(def_data[team]['short left'])
+        def_short_middle.append(def_data[team]['short middle'])
+        def_short_right.append(def_data[team]['short right'])
+        def_long_left.append(def_data[team]['deep left'])
+        def_long_middle.append(def_data[team]['deep middle'])
+        def_long_right.append(def_data[team]['deep right'])
+>>>>>>> c8b50ad8ae5054da6acab8e913987b312f1339d6
 
 
 off_short_left[:] = [round(x*100) for x in off_short_left]
